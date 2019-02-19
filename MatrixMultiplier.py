@@ -27,7 +27,6 @@ def multiply_matrix (a, b):
     a_columns = len(a[0])
     a_rows = len(a)
     b_columns = len(b[0])
-    b_rows = len(b)
 
     matrix = [[0 for x in range(b_columns)] for y in range(a_rows)]
     result = 0
@@ -77,7 +76,6 @@ def main():
         result_matrix = multiply_matrix(a_matrix, b_matrix)
         print("\nResult:\n")
         print_matrix(result_matrix)
-        
     else:
         print("You can't multiply this matrixes")
 
