@@ -34,10 +34,8 @@ def gauss(a, b):
             b[i][j] *= t
     return det, b
  
-# As an example, compute the determinant and inverse of 3x3 magic square
- 
-a = [[2, 1, -3], [0, -2, 1], [0, 0, 1]]
-b = [[-10],[-2], [6]]
+a = [[3, 4, -1], [0, -2, 10], [0, 4, -2]]
+b = [[-6],[-8], [-2]]
 det, c = gauss(a, b)
  
 print(c)
